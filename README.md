@@ -1,2 +1,3 @@
 <h1> JavaScript </h1>
-<p> 1. Increment & Decrement (Post- & Pre-) </p>
+1. Increment & Decrement (Post- & Pre-) <br />
+2. Scope (Scoping) 

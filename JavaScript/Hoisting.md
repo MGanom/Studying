@@ -57,4 +57,25 @@ a = undefined;
 var a;
 ```
 
-는 위의 코드와 같은 역할을 하고 있다고 볼 수 있는 것이다.
+는 위의 코드와 똑같은 역할을 하고 있다고 볼 수 있는 것이다. 즉,
+
+```jsx
+console.log(a);
+var a;
+```
+는 ```undefined``` 가 나오게 된다.
+
+반면에 let이나 const의 경우
+
+```jsx
+let b;
+b = undefined;
+```
+
+가 분리되어 있기 때문에
+
+```jsx
+let b;
+```
+
+는 아무런 할당이 이루어지지 않아 ```ReferenceError: b is not defined``` 가 나온다.

@@ -79,3 +79,5 @@ let b;
 ```
 
 는 아무런 할당이 이루어지지 않아 ```ReferenceError: b is not defined``` 가 나온다.
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

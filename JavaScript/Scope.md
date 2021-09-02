@@ -34,3 +34,5 @@ log2(); // 할당됐던 moon을 호출
 ```
 
 ![image](https://user-images.githubusercontent.com/80687334/122420160-6af75380-cfc6-11eb-9678-578a5651b841.png)
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

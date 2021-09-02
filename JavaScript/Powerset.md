@@ -28,3 +28,5 @@ function powerSet(arr) {
 ## 활용
 모든 부분 집합을 비교하는 알고리즘이나 각 요소에 대해  
 적합성을 판별하는 알고리즘을 풀 때 활용할 수 있다.  
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

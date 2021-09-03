@@ -6,3 +6,8 @@
 4. [Powerset](https://github.com/MGanom/Studying/blob/main/JavaScript/Powerset.md)
 5. [Sync & Async](https://github.com/MGanom/Studying/blob/main/JavaScript/Sync%20%26%20Async.md)
 6. [Function Scope & Block Scope](https://github.com/MGanom/Studying/blob/main/JavaScript/Function%20Scope%20%26%20Block%20Scope.md)
+7. [DOM](https://github.com/MGanom/Studying/blob/main/JavaScript/DOM.md)
+
+<h1> React </h1>
+
+1. [Virtual DOM](https://github.com/MGanom/Studying/blob/main/React/Virtual%20DOM.md)

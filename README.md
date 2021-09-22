@@ -12,3 +12,6 @@
 <h1> React </h1>
 
 1. [Virtual DOM](https://github.com/MGanom/Studying/blob/main/React/Virtual%20DOM.md)
+
+
+1. [MPA, SPA, SSR, CSR](https://github.com/MGanom/Studying/blob/main/MPA%2C%20SPA%2C%20SSR%2C%20CSR.md)

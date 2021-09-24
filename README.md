@@ -1,6 +1,6 @@
 <h1> Concept </h1>
 
-1. [MPA, SPA, SSR, CSR](https://github.com/MGanom/Studying/blob/main/MPA%2C%20SPA%2C%20SSR%2C%20CSR.md)
+1. [MPA, SPA, SSR, CSR](https://github.com/MGanom/Studying/blob/main/Concept/MPA%2C%20SPA%2C%20SSR%2C%20CSR.md)
 
 <h1> JavaScript </h1>
 

@@ -12,6 +12,7 @@
 6. [Function Scope & Block Scope](https://github.com/MGanom/Studying/blob/main/JavaScript/Function%20Scope%20%26%20Block%20Scope.md)
 7. [DOM](https://github.com/MGanom/Studying/blob/main/JavaScript/DOM.md)
 8. [Loop](https://github.com/MGanom/Studying/blob/main/JavaScript/Loop.md)
+9. [Prototype](https://github.com/MGanom/Studying/blob/main/JavaScript/Prototype.md)
 
 <h1> React </h1>
 

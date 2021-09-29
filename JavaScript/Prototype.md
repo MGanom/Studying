@@ -15,6 +15,8 @@
 다시 말해 우리가 메서드를 사용하거나 속성에 접근하는 등의 행동을 하면 자바스크립트는 이 프로토타입 체인을 타고 올라가며  
 메서드와 속성을 탐색해 이들이 정의된 생성자(constructor)의 프로토타입을 찾게 되는 것이다.  
 
+---
+
 ## Prototype의 필요성
 ```jsx
 function Example() {
@@ -48,9 +50,53 @@ console.log(ex1.a); // result 1
 console.log(ex2.b); // result 4
 ```
 
-우선 Example이라는 함수가 생성되는 순간 Example 함수는 constructor를 갖게 되고, 그렇기 때문에 new를 사용할 수 있게 된다.  
+우선 Example이라는 함수가 생성되는 순간 Example 함수는 constructor를 갖게 되고, 그렇기 때문에 `new`를 사용할 수 있게 된다.  
 그리고 .prototype으로 함수 내의 프로토타입을 정의해주고 new를 사용하여 변수에 할당해주면 이전의 코드와는 다르게  
 메모리에 a와 b가 새로 할당되는 것이 아닌 보이지 않는 Object 안에서 프로토타입을 통해 하나씩 꺼내오는 방식으로 작동하게 된다.  
 즉, 메모리 관리에도 용이하고 좀 더 체계적인 환경이 갖춰지게 되는 것이다.
 
+---
+
 ## Prototype의 원리
+프로토타입의 원리는 간단하면서도 복잡해서 일단 간단하게 정리해보자면,  
+우선 프로토타입은 Prototype Object(프로토타입 객체)와 Prototype Link(프로토타입 링크) 두 가지로 이루어져 있다.  
+
+### Protoype Object (프로토타입 객체)
+```jsx
+function Example() {}
+
+const ex = new Example();
+```
+자바스크립트 내의 객체는 이와 같이 함수로부터 생성된다. 심지어 
+```jsx
+const newObject = {};
+```
+또한 이미 자바스크립트에서 기본으로 제공하는 함수인 `function Object() { [native code] }` 로부터
+```jsx
+const newObject = new Object();
+```
+를 통해 생성되는 객체이며, 함수와 배열도 예외는 아니다.  
+
+이것이 가능한 이유는 자바스크립트에서 함수가 생성 되는 순간 해당 함수에 2가지 일이 일어나기 때문이다.
+
+1. constructor(생성자) 자격이 부여되어 `new`를 통해 새로운 객체를 생성할 수 있게 된다.
+2. 함수의 생성자와 `___proto___`(프로토타입 링크)를 속성으로써 가진 프로토타입 객체가 생성되고,  
+ 함수와 이 객체가 prototype이라는 속성을 통해 연결된다.  
+
+즉, constructor는 함수가 생성될 때 생성된 함수를 가리키고 있고 있기 때문에 `.prototype`을 통해서  
+프로토타입 객체에 접근이 가능해지고, 사용자는 이것으로 프로토타입 객체에 속성을 추가하거나 삭제할 수 있게 되는 것이다.
+
+```jsx
+function Example() {}
+
+Example.prototype.a = 1;
+
+const ex1 = new Example();
+
+console.log(ex1.a); // result 1
+```
+
+그런데 이 예시와 같이 Example에 prototype으로 접근하여 1을 추가해줬을 뿐,  
+정작 ex1에는 a라는 속성을 추가하지 않았음에도 a의 값에 접근할 수 있는 이유가 무엇일까?
+
+### Prototype Link (프로토타입 링크)

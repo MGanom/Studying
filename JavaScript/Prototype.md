@@ -100,3 +100,6 @@ console.log(ex1.a); // result 1
 정작 ex1에는 a라는 속성을 추가하지 않았음에도 a의 값에 접근할 수 있는 이유가 무엇일까?
 
 ### Prototype Link (프로토타입 링크)
+
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

@@ -17,3 +17,7 @@
 <h1> React </h1>
 
 1. [Virtual DOM](https://github.com/MGanom/Studying/blob/main/React/Virtual%20DOM.md)
+
+<h1> TypeScript </h1>
+
+1. [TypeScript](https://github.com/MGanom/Studying/blob/main/TypeScript/TypeScript.md)

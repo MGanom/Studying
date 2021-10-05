@@ -75,3 +75,5 @@ function someObject(obj: object) {}
 someObject({ name: 'moon' });
 someObject({ age: 100 });
 ```
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

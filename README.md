@@ -21,3 +21,4 @@
 <h1> TypeScript </h1>
 
 1. [TypeScript](https://github.com/MGanom/Studying/blob/main/TypeScript/TypeScript.md)
+2. [Types](https://github.com/MGanom/Studying/blob/main/TypeScript/Types.md)

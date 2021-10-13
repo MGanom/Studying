@@ -94,4 +94,45 @@ console.log(addNumbers(1,2,3,4)); // 10
 `...`(전개 구문, Spread Syntax)를 활용하여 인자에 전달되는 numbers는 number로 이루어진 배열([])이라고 설정해주면  
 인자에 들어오는 number값들이 배열화되고 그 안에 들어오는 값이 몇 개든 활용할 수 있게 된다.
 
+## Array, Tuple
+### Array
+```jsx
+const people: string[] = ['Moon', 'Kim', 'Lee'];
+const age: Array<number> = [20, 22, 24];
+```
+타입스크립트에서 배열을 정의하는 방법에는 이렇게 두가지가 있다.  
+이 두 방법에는 큰 차이가 없지만 함수를 만들 때는 첫 번째 방법이 더 유용하다.
+```jsx
+function print(people: string[]) {
+  people.push('Park');
+  console.log(people);
+};
+```
+이러한 코드가 있을 때 주어진 데이터가 함부로 함수 내부에서 변경되거나 업데이트 되지 않도록 하려면  
+`readonly`를 붙여주면 된다.
+```jsx
+function print(people: readonly string[]) { // readonly를 추가
+  people.push('Park'); // error: Property 'push' does not exist on type 'readonly string[]'.
+  console.log(people);
+};
+```
+이렇게 `readonly`를 추가하면 데이터의 불변성을 보장할 수 있게 된다.
+
+### Tuple
+```jsx
+let info: [string, number];
+info = ['Moon', 20];
+info[0] // 'Moon'
+info[1] // 20
+```
+튜플을 사용하면 하나의 변수에 서로 다른 타입의 데이터를 담을 수가 있다. 얼핏 보기엔 활용도가 높아 보이지만,  
+이에 접근을 할 때 배열처럼 인덱스를 사용해야 한다는 점 때문에 가독성이 떨어지는 문제점이 있다.  
+따라서 되도록이면 interface, type alias, 혹은 class를 사용하는 것이 좋으나 굳이 사용하겠다면  
+object destructuring을 사용하는 방법도 있다.
+```
+const [name, age] = info;
+```
+이렇게 할 경우 `info.name`과 `info.age`로 접근이 가능해져 가독성이 나아진다.  
+하지만 결국 선언하는 시점과 가독성 개선하는 시점이 다르다는 점에서 효율성이 떨어진다고 볼 수 있다.
+
 [리스트로 돌아가기](https://github.com/MGanom/Studying)

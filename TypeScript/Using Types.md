@@ -133,6 +133,6 @@ object destructuring을 사용하는 방법도 있다.
 const [name, age] = info;
 ```
 이렇게 할 경우 `info.name`과 `info.age`로 접근이 가능해져 가독성이 나아진다.  
-하지만 결국 선언하는 시점과 가독성 개선하는 시점이 다르다는 점에서 효율성이 떨어진다고 볼 수 있다.
+하지만 결국 선언하는 시점과 가독성을 개선하는 시점이 다르다기 때문에 효율성이 여전히 떨어진다고 볼 수 있다.
 
 [리스트로 돌아가기](https://github.com/MGanom/Studying)

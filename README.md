@@ -23,3 +23,4 @@
 1. [TypeScript](https://github.com/MGanom/Studying/blob/main/TypeScript/TypeScript.md)
 2. [Types](https://github.com/MGanom/Studying/blob/main/TypeScript/Types.md)
 3. [Using Types](https://github.com/MGanom/Studying/blob/main/TypeScript/Using%20Types.md)
+4. [Type Alias](https://github.com/MGanom/Studying/blob/main/TypeScript/Type%20Alias.md)

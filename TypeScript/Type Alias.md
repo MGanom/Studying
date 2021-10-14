@@ -31,3 +31,5 @@ type JSON = 'json';
 const json: JSON = 'json'
 ```
 이렇게 타입에다가 문자열을 할당해주는 것을 String Literal Types라고 부른다.
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

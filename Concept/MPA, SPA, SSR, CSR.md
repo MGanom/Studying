@@ -43,3 +43,5 @@ SPA는 MPA의 SSR 방식에 따른 단점들을 보완할 수 있는 CSR 방식�
 ## CSR (Client Side Rendering)
 브라우저(클라이언트)에서 페이지를 최초로 로딩할 때 HTML을 비롯한 Javascript와 CSS 등의  
 각종 데이터와 리소스를 받아와 데이터 요청이 이루어지거나 사용자의 상호작용에 따라 동적으로 렌더링하는 방식을 말한다.
+
+[리스트로 돌아가기](https://github.com/MGanom/Studying)

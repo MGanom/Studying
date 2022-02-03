@@ -16,7 +16,8 @@
 
 <h1> React </h1>
 
-1. [Virtual DOM](https://github.com/MGanom/Studying/blob/main/React/Virtual%20DOM.md)
+1. [Virtual DOM](https://github.com/MGanom/Studying/blob/main/React/Virtual%20DOM.md)  
+2. [Lifecycle](https://github.com/MGanom/Studying/blob/main/React/Lifecycle.md)
 
 <h1> TypeScript </h1>
 

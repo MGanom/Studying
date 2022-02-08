@@ -15,15 +15,14 @@ const [number, setNumber] = useState(0)
 ```jsx
 useEffect(() => {
   // 실행할 코드
+  return () => {
+    // 실행할 코드
+  }
 },[dependency(의존성)])
 ```
 useEffect는 함수형 컴포넌트에서 클래스 컴포넌트 생명주기 메서드인 componentDidMount, componentDidUpdate, componentWillUnmount의 역할을 한다.  
-우선 React가 DOM을 바꾼 뒤에 컴포넌트가 마운트 되면서 useEffect가 실행되어 componentDidMount와 같은 작동을 하고, DOM이 업데이트가 되면 componentDidUpdate와 같은 작동을 하며 실행되고, 마지막으로 마운트 해제가 될 때 componentWillUnmount와 같은 작동을 하며 실행된다.
+우선 React가 DOM을 바꾼 뒤에 컴포넌트가 마운트 되면서 코드가 실행되어 componentDidMount와 같은 작동을 하고, DOM이 업데이트가 되면 componentDidUpdate와 같은 작동을 하며 실행되고, 마지막으로 마운트 해제가 될 때 componentWillUnmount와 같은 작동을 하며 return 안의 코드가 실행된다.
 
-#### 2-1. Clean-up을 이용하지 않는 Effects
-```jsx
-useEffect(() => {
-  console.log(number)
-});
-```
+#### 2-1. Clean-up을 이용하는 Effects
+
 
